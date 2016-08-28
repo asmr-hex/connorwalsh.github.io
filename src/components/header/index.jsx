@@ -12,19 +12,19 @@ export default class Header extends Component {
 			    color={"#ec95bc"}
 			    font={"Arial, Helvetica, sans-serif"}
 			    size={"160%"}
-			    href={"www.google.com"}
+			    href={"http://www.google.com"}
 		/>
 		<HeaderText text={"CODE"}
 			    color={"#5cb2fb"}
 			    font={"Arial, Helvetica, sans-serif"}
 			    size={"160%"}
-			    href={"www.github.com/connorwalsh"}
+			    href={"http://www.github.com/connorwalsh"}
 		/>
 		<HeaderText text={"LIFE SUX"}
 			    color={"#f9f895"}
 			    font={"Arial, Helvetica, sans-serif"}
 			    size={"160%"}
-			    href={"www.google.com"}
+			    href={"http://www.google.com"}
 		/>
 	    </div>
 	)
