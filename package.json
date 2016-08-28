@@ -1,0 +1,42 @@
+{
+  "name": "polygon.pizza",
+  "version": "1.0.0",
+  "description": "The personal website of c. walsh",
+  "scripts": {
+    "build": "webpack",
+    "start": "node server.js",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/connorwalsh/connorwalsh.github.io.git"
+  },
+  "keywords": [
+    "life"
+  ],
+  "author": "connor <c@polygon.pizza> (http://github.com/connorwalsh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/connorwalsh/connorwalsh.github.io/issues"
+  },
+  "homepage": "https://github.com/connorwalsh/connorwalsh.github.io",
+  "devDependencies": {
+    "babel-core": "^6.0.20",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^6.0.1",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-react": "^6.0.15",
+    "babel-preset-stage-0": "^6.0.15",
+    "css-loader": "^0.23.1",
+    "eslint": "^1.10.3",
+    "eslint-plugin-react": "^3.6.2",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "dependencies": {
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
+  }
+}
