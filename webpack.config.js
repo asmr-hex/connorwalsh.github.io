@@ -13,7 +13,7 @@ module.exports = {
     './src/index.jsx'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'static'),
     filename: 'bundle.js',
     publicPath: '/static/'
   },
@@ -33,7 +33,7 @@ module.exports = {
 	},
 	{
 	    test: /\.(jpg|png)$/,
-	    loader: 'url?limit=25000',
+	    loader: 'url?limit=40000',
 	    exclude: /node_modules/,
 	},
     ]
