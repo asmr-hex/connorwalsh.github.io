@@ -1,0 +1,159 @@
+/*PAGE GLOBAL CSS ------------------------------------------------*/
+	@font-face{
+		font-family: "Pixelfont";
+		src:url(./Minecraftia.ttf);
+	}
+
+
+/*PAGE SPECIFIC CSS ----------------------------------------*/
+/*    Games      */
+
+#cartridgeContainer{
+	display: inline-block;
+	position: relative;
+	left: 50%;
+	margin-left: -500px;
+	top: 50px;
+	width: 1000px;
+	height: 1100px;
+}
+.GameContainer{
+	position:relative;
+	width: 1000px;
+	height: 350px;
+}
+.GameBand{
+	display:inline-block;
+	position: absolute;
+	height: 350px;
+	width:1100px;
+	z-index: -10;
+}
+.GameCartridgeContainer{
+	display: inline-block;
+	position: relative;
+	top: 25px;*/
+	width: 500px;
+	height: 300px;
+}
+.GameCartridge{
+	position: absolute;
+	width: 500px;
+	height: 300px;
+	z-index: 10;
+}
+.GameLabel{
+	position: absolute;
+	width:261px;
+	height: 110px;
+	left: 119px;
+}
+.GameInfo{
+	display: inline-block;
+	position: absolute;
+	width: 500px;
+	height: 300px;
+	top: 25px;
+}
+.GameHeader{
+	position:relative;
+	margin-top:-30px;
+}
+.GameHeader a:link{
+	text-decoration:none;
+	font-size: 1.4em;
+}
+.GameHeader a:visited{
+	text-decoration:none;
+}
+.GameHeader p{
+	text-align:center;
+}
+.GameDescription{
+	position: relative;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.GameDescription p{
+	font-size: .5em;
+}
+
+
+/* CobWeb */
+#WebBand{
+	left: -100px;
+	background-color: #90a68d;
+}
+#WebCartridgeContainer{
+	left:0px;
+}
+#WebInfo{
+	left: 500px;
+}
+#WebHeader a:link{
+	color: #b2caae;
+}
+#WebHeader a:visited{
+	color: #b2caae;
+}
+#WebHeader a:hover{
+	color: #dfefdc;
+}
+#WebDescription{
+	color: #b2caae;
+}
+
+/* Deeper Properties */
+#DeeperBand{
+	left: 0px;
+	background-color: #a3a8c3;
+}
+#DeeperCartridgeContainer{
+	left:500px;
+}
+#DeeperInfo{
+	left: 0px;
+}
+#DeeperHeader a:link{
+	color: #757991;
+}
+#DeeperHeader a:visited{
+	color: #757991;
+}
+#DeeperHeader a:hover{
+	color: #dadce7;
+}
+#DeeperDescription{
+	color: #757991;
+}
+
+/* Balloon Properties */
+#BalloonBand{
+	left: -100px;
+	background-color: #bc7171;
+}
+#BalloonCartridgeContainer{
+	left:0px;
+}
+#BalloonInfo{
+	left: 500px;
+}
+#BalloonHeader a:link{
+	color: #8f5b5b;
+}
+#BalloonHeader a:visited{
+	color: #8f5b5b;
+}
+#BalloonHeader a:hover{
+	color: #c19494;
+}
+#BalloonDescription{
+	color: #8f5b5b;
+}
+
+#myContent{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+

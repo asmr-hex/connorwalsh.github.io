@@ -1,0 +1,403 @@
+/*PAGE SPECIFIC CSS: MUSIC ----------------------------------------*/
+	@font-face{
+		font-family: "Pixelfont";
+		src: url(./Minecraftia.ttf);
+
+	}
+	#contentContainer{
+		display:block;
+		position: relative;
+		width: 1300px;
+		height: 600px;
+	}
+	#cassette_area{
+		display: inline-block;
+		position: relative; /*relative*/
+		/*float: left;*/
+		z-index: 10;
+		left:10%;
+		margin-top: 25px;
+		width: 300px;
+		height: 550px;
+	/*	background-color:#fd92cc ;*/
+	}
+	.cassette_container{
+		display:block;
+		position: relative;
+		margin-left: 36px;
+		margin-top: 15px;
+		padding: 2px 2px;
+		width: 224px;
+		height: 112px;
+		border: 3px dashed #fd92cc;
+	}
+	.cassette{
+		position: absolute;
+		z-index: 100;
+		width: 224px;
+		height: 112px;
+		overflow: hidden;
+	}
+	.cassette_img{
+		position:relative;
+		width: 448px;
+		height: 112px;
+	}
+	.cassette_img_play{
+		left: -224px;
+	}
+	
+	
+	
+	
+	
+	#player{
+		display:inline-block;
+		position: fixed;
+		float: left;
+		left: 50%;
+		margin-left: -160px;
+		margin-top: 40px;
+		width: 320px;
+		height: 484px;
+		overflow: hidden;
+	}
+	#tape_player{
+		display: inline-block;
+		width: 1920px;
+		height: 484px;
+		position: absolute;
+		z-index: -1;
+	}
+	#tapeloading{
+		position: absolute;
+		display: none;
+		width: 100px;
+		height: 83px;
+		left: 50%;
+		top: 50px;
+		margin-left: -50px;
+		z-index: 100;
+	}
+	#tape_deck{
+		display:inline-block;
+		position: absolute;
+		left: 47px;
+		top: 239px;
+		width: 224px;
+		height:112px;
+		overflow: hidden;
+	}
+	.plyr_play{
+		left: -320px;
+	}
+	.plyr_pause{
+		left: -640px;
+	}
+	.plyr_backward{
+		left: -960px;
+	}
+	.plyr_forward{
+		left: -1280px;
+	}
+	.plyr_eject{
+		left: -1600px;
+	}
+	#play_button{
+		display: inline-block;
+		position: absolute;
+		left: 32px;
+		top: 436px;
+		width: 47px;
+		height: 43px;
+		background-color: transparent; 
+		/*border: 1px solid yellow;		*/
+	}
+	#pause_button{
+		display: inline-block;
+		position: absolute;
+		left: 84px;
+		top: 436px;
+		width: 47px;
+		height: 43px;
+		background-color: transparent; 	
+	}
+	#backward_button{
+		display: inline-block;
+		position: absolute;
+		left: 136px;
+		top: 436px;
+		width: 47px;
+		height: 43px;
+		background-color: transparent; 	
+	}
+	#forward_button{
+		display: inline-block;
+		position: absolute;
+		left: 188px;
+		top: 436px;
+		width: 47px;
+		height: 43px;
+		background-color: transparent; 		
+	}
+	#eject_button{
+		display: inline-block;
+		position: absolute;
+		left: 240px;
+		top: 436px;
+		width: 47px;
+		height: 43px;
+		background-color: transparent; 		
+	}
+	#volume_bar_panel{
+		display: none;
+		position: absolute;
+		z-index: 1;
+		left: 20px;
+		top: 348px;
+		width: 22px;
+		height: 45px;
+		background-color: #4B8EDB;
+		border: 1px solid #5AA1F1;
+	}
+	#volume_bar_container{
+		position: absolute;
+		z-index:2;
+		top: 4px;
+		left: 1px;
+		width: 20px;
+		height: 35px;
+		border: #000000;
+	}
+	#volume_bar{
+		position: absolute;
+		z-index: 1;
+		left: 11px;
+		top: 4px;
+		width: 2px;
+		height: 35px;
+		background-color: #FFFFFF;
+	}
+	#volume_bar_container.ui-slider .ui-slider-handle{
+		position: absolute;
+		z-index: 3;
+		left: 0px;
+		bottom: 0px;
+		width: 20px;
+		height: 4px;
+		margin-bottom: -2px;
+		background-color: yellow;
+		cursor: url(../../Global/img/arrow2.png), url(../../Global/img/arrow.cur), auto;
+	}
+	#volume_icon_container{
+		position: absolute;
+		z-index: 1;
+		left: 20px;
+		top: 398px;
+		width: 22px;
+		height: 21px;
+		overflow: hidden;
+	}
+	#volume_icon{
+		position: absolute;
+		width: 44px;
+		height: 21px;
+	}
+	.volume_icon_mute{
+		left: -22px;
+	}
+	
+	#time_bar{
+		position: absolute;
+		z-index: 2;
+		left: 48px;
+		top: 402px;
+		width: 210px;
+		height: 10px; 
+			
+	}
+	#time_line{
+		position: absolute;
+		z-index: 1;
+		left: 48px;
+		top: 407px;
+		width:210px;
+		height: 3px;
+		background-color: white;
+	}
+
+ 	 #time_bar.ui-slider .ui-slider-handle{
+		position: absolute;
+		z-index: 3;
+		left: 0px;
+		margin-left: -5px;
+		top: 0px;
+		width: 10px;
+		height: 10px;
+		background-color: #ffe466;
+		cursor: url(../../Global/img/arrow2.png), url(../../Global/img/arrow.cur), auto;
+		border: 1px solid yellow;
+
+	}
+	#time_remaining{
+		position: absolute;
+		left: 260px;
+		top: 398px;
+		width: 30px;
+		height: 21px;
+	}
+	#time_left{
+		position: absolute;
+		margin: auto;
+		top:-40%;
+		width: 30px;
+		height: 21px;
+		font-size: 10px;
+		color: #FFFFFF;
+	}
+	
+/*------- Music Information ----------------*/
+	
+	#info_bubble{
+		display:inline-block;
+		opacity: 0;
+		position: fixed;
+		left: 50%;
+		margin-left: 160px;
+		margin-top: 40px;
+		width: 403px;
+		height: 484px;
+		background-image: url(../img/info.png);
+	}
+	#info_container{
+		display: inline-block;
+		position: absolute;
+		left: 60px;
+		top: 20px;
+		width: 343px;
+		height: 443px;
+		overflow: hidden;
+	/*	border: 1px dotted black;*/
+	}
+	#info_container:hover{
+		overflow-y: scroll;
+	}
+	#project_name{
+		display: inline-block;
+		position: relative;
+		width: 330px;
+		left: 0px;
+		text-align: center;
+		font-size: 1em;
+		color: #bcb8a5;
+	}
+	#project_img{
+		display: block;
+		position: relative;
+		left: 165px;
+		margin-left: -75px;
+		margin-top: 5px;
+		width: 150px;
+		height: 150px;
+		border: 2px dashed #10c6e2;
+	}
+	#download{
+		display: inline-block;
+		font-size: .45em;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		position:relative;
+		width:330px;
+		left: 0px;
+		text-align: center;
+
+	}
+	a:link{
+		color: #10c6e2;	
+		text-decoration:none;
+	}
+	a:visited{
+		color: #10c6e2;	
+		text-decoration:none;
+	}
+	
+	#track_list{
+		display: block;
+		position: relative;
+	/*	width:300px;*/
+		left:0px;
+		top:0%;
+
+	}
+
+	#track_list td{
+		font-size: .55em;
+		color: #9f9c8e;
+	}
+	#track_list tr{
+		display: block;
+		border-bottom: 1px dotted #9f9c8e;
+	}
+	.current_tr{
+		background-color: #dae8bd;
+	}
+	.trk_number{
+		height: 40px;
+		width: 10px;
+	}
+	.trk_name{
+		height: 40px;
+		width: 250px;
+		text-align: left;
+
+	}
+	.marquees{
+		overflow: hidden;
+		height: 40px;
+		width: 250px;
+	}
+	.trk_time{
+		height: 40px;
+		width: 30px;
+		text-align: right;
+
+	}
+	#photo_container{
+		display: block;
+		position: relative;
+		margin-top: 10px;
+		width: 340px;
+
+	}
+
+	#about{
+		margin-top: 10px;
+		font-size:.5em; 
+		margin-left: 4px;
+		color: #9f9c8e; 
+		width: 315px; 
+		border-top: 1px solid #9f9c8e;
+	}
+	#descriptions{
+		dispaly: block;
+		position: absolute;
+		margin-left: 4px;
+		word-wrap: normal;
+		line-height: normal;
+		width: 325px;
+		font-size:.45em; 
+		color: #9f9c8e;
+	}
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

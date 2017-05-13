@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+	<head>
+		<title> Home | Connor R. Walsh </title>
+		<!-- LOAD GLOBAL DOCS -->
+		<link rel="shortcut icon" href="./Global/img/mushroom.png">	
+		<link type="text/css" rel="stylesheet" href="./Global/stylesheets/stylesheet.css">		 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="./Global/javascript/jquery-ui-1.10.1.custom.min.js"></script>
+		<script src="./Global/javascript/portfolio.js"></script>
+		
+		<!-- LOAD LOCAL DOCS -->
+		<link type="text/css" rel="stylesheet" href="./index_stylesheets/index.css">
+		<script src="./index_javascript/index.js"></script> 
+		<meta name="keywords" content="Connor Walsh, Connor R. Walsh, Portfolio, Music, Art">	
+		
+	</head>
+	<body onunload="">
+		<div class="loading">
+			<img src="./Global/img/loading.gif">
+		</div>
+		<div class="content">
+			<div id="header1"></div>
+			<div id="header2"></div>
+			<div id="header">
+				<a href="#" id="BioLink">
+					Connor
+					<span id = "homeContainer"><img id= "imgLogo" src="./Global/img/homeLogo.png"></span>
+					<br> Walsh 
+				</a>
+			</div>
+			<div id="biography">
+				<div id="panel1" class="slidingPanel">
+					<img id="right" src="./index_img/right.png">
+					<img id="portrait" src="./index_img/self_port.png">
+					
+					<p> Hi! I am a human boy from the United States. 
+						<br>
+						I am a graduate student at Carnegie Mellon University where I study Electrical and Computer Engineering. 
+						<br>
+						Aside from my interests in Science, Math, Engineering, and Computer Science,
+						I enjoy composing music, writing literature, painting, and traveling to different places.
+						<br>
+						<a id="cv" href="./CV_ConnorWalsh.pdf" target="_blank">  Curriculum Vitae </a>
+						<br>
+						Questions or comments welcomed at: <span id="email"> connorrobinsonwalsh@gmail.com </span>
+					</p>
+				</div>
+				<div id="panel2" class="slidingPanel">
+					<img id="left" src="./index_img/left.png">
+					<a id="gitHubWrapper" href="https://github.com/TUN-TUN?tab=repositories" target="_blank">
+						<img id="github" src="./index_img/github.png">
+					</a>
+					<a id="linkedinWrapper" href="https://www.linkedin.com/in/connorrobinsonwalsh" target="_blank">
+						<img id="linkedin" src="./index_img/linkedin.png">
+					</a>
+				</div>
+			</div>
+			<div id="Sections">
+				<div class="SectionItem" id="MUSIC">
+					<div id= "music_container">
+					<a class="transition" id="Music" href="./music"  ></a>
+					</div>
+					<p> Sounds </p>
+				</div>
+				<div class="SectionItem" id="GAMES">
+					<div id= "games_container">
+					<a class="transition" id="Games" href="./games" ></a>
+					</div>
+					<p> Play </p>
+				</div>	
+				<div class="SectionItem" id="TRAVEL">
+					<div id= "travel_container">
+					<a class="transition" id="Travel" href="./world"></a>
+					</div>
+					<p> World </p>
+				</div>	
+				<div class="SectionItem" id="SCIENCE">
+					<div id= "science_container">
+					<a class="transition" id="Science" href="./science"></a> 
+					</div>
+					<p> Science </p>
+				</div>
+				<div class="SectionItem" id="SCRIBBLE">
+					<a class="transition" id="Scribble" href="./art">
+						<div id="container">
+							<img id="etchAsketch" src="./index_img/scribbles.png">
+							<canvas id="Drawing" width="125" height="103"></canvas>
+						</div>
+					</a> 
+					<p> Scribble </p>
+				</div>
+			</div> 
+		</div>
+
+
+	</body>
+	
+</html>

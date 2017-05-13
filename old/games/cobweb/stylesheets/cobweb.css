@@ -1,0 +1,33 @@
+/*PAGE GLOBAL CSS ------------------------------------------------*/
+	@font-face{
+		font-family: "Pixelfont";
+		src:url(./Minecraftia.ttf);
+	}
+
+
+/*PAGE SPECIFIC CSS ----------------------------------------*/
+/*    Games      */
+
+#gameFrame{
+	display: block;
+	position:relative;
+	width: 1000px;
+	height: 830px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url(../img/cobweb_frame.png);
+	
+}
+#gameBox{
+	display:inline-block;
+	position:absolute;
+	top: 100px;
+	left: 150px;
+	
+}
+#myContent{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+

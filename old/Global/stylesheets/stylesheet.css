@@ -1,0 +1,228 @@
+/*PAGE GLOBAL CSS ------------------------------------------------*/
+/*	@font-face{
+		font-family: "Pixelfont";
+		src: url(./Minecraftia.ttf);
+	}*/
+	
+	html{
+		cursor: url(../img/arrow.png), url(../img/arrow.cur), auto; 
+		width: 100%;
+		height: 100%;
+	}
+	
+	body{
+		font-family: Pixelfont;
+		line-height: 145%;
+		font-size: 25px;
+	    margin: 0px;
+		padding: 0px;
+	}
+	
+	a {
+		cursor: url(../img/arrow2.png), url(../img/arrow.cur), auto;
+	}
+	
+	div.loading{
+		position: absolute;
+		width: 128px;
+		height: 148px;
+		left: 50%;
+		top: 50%;
+		margin-left: -64px;
+		margin-top: -74px;
+		z-index: 100;
+	}
+	
+	div.content{
+		display: none;
+	}
+	
+	#header1{
+		display:block;
+		position: fixed;
+		width: 100%;
+		height: 10px;
+		top: 0px;
+		background-color: rgb(250,250,114);
+		z-index: 1000;
+	}
+	
+	#header2{
+		position: fixed;
+		width: 100%;
+		height: 10px;
+		top: 10px;
+		background-color: rgb(137,199,218);
+		z-index: 10000;
+	} 
+	#header3{
+		display:block;
+		position:relative;
+		width:100%;
+		height:40px;
+		top:0px;
+	}
+	
+	.navBar{
+		display:block;
+		position: relative;
+		width: 800px; /*800*/
+		height: 100px;
+		top: 0px;
+		left: 50%;
+		margin-left: -400px; /*-400*/
+	}
+	
+	.beginSet{
+		display:inline-block;
+		position:relative;
+		width:100px;
+		height:52px;
+		top:25px;
+		left: 10px;
+		background-image: url(../img/navIcons/equation.png);
+	}
+	.comma{
+		display:inline-block;
+		position:relative;
+		width:6px;
+		height:50px;
+		top:35px;
+		left: 12px;
+		background-image: url(../img/navIcons/comma.png);
+	}
+	.endSet{
+		display:inline-block;
+		position:relative;
+		width:25px;
+		height:52px;
+		top:25px;
+		left: 10px;
+		background-image: url(../img/navIcons/rightParen.png);
+	}
+	.soundContainer{
+		display: inline-block;
+		position: relative;
+		overflow:hidden;
+		width: 75px;
+		height: 50px;
+		top:25px;
+		left: 12px;
+	}
+	.worldContainer{
+		display: inline-block;
+		position: relative;
+		overflow:hidden;
+		width: 51px;
+		height: 51px;
+		top:25px;
+		left: 12px;
+	}
+	.homeContainer{
+		display: inline-block;
+		position: relative;
+		overflow:hidden;
+		width:50px;
+		height:50px;
+		top:25px;
+		left: 12px;
+	}
+	.scienceContainer{
+		display: inline-block;
+		position: relative;
+		overflow:hidden;
+		width:75px;
+		height:50px;
+		top:25px;
+		left: 12px;
+	}
+	.scribbleContainer{
+		display: inline-block;
+		position: relative;
+		overflow:hidden;
+		width:60.5px;
+		height: 50px;	
+		top:25px;
+		left: 12px;
+	}
+	.gamesContainer{
+		display: inline-block;
+		position: relative;
+		overflow:hidden;
+		width:100px;
+		height:50px;
+		top:25px;
+		left: 12px;
+	}
+	#soundIcon{
+		display:inline-block;
+		position: relative;
+		left: 0px;
+		width: 150px;
+		height: 50px;
+		background-image:url(../img/navIcons/sounds.gif);
+	}
+	#soundIcon:hover{
+		left: -75px;
+	}
+	#gamesIcon{
+		display:inline-block;
+		position: relative;
+		left: 0px;
+		width: 200px;
+		height: 50px;
+		background-image:url(../img/navIcons/games.gif);
+	}
+	#gamesIcon:hover{
+		left: -99px;
+	}
+	#worldIcon{
+		display:inline-block;
+		position: relative;
+		left: -51px;
+		width: 102px;
+		height: 51px;
+		background-image:url(../img/navIcons/world.gif);
+	}
+	#worldIcon:hover{
+		left: 0px;
+	}
+	#scienceIcon{
+		display:inline-block;
+		position: relative;
+		left: -75px;
+		width: 150px;
+		height: 50px;
+		background-image:url(../img/navIcons/science.gif);
+	}
+	#scienceIcon:hover{
+		left: 0px;
+	}
+	#scribbleIcon{
+		display:inline-block;
+		position: relative;
+		left: 0px;
+		width: 121px;
+		height: 50px;
+		background-image:url(../img/navIcons/scribble.png);
+	}
+	#scribbleIcon:hover{
+		left: -60.5px;
+	}
+	#homeIcon{
+		display:inline-block;
+		position: relative;
+		left: 0px;
+		width: 100px;
+		height: 50px;
+		background-image:url(../img/navIcons/home.png);
+	}
+	#homeIcon:hover{
+		left: -50px;
+	}
+	
+	
+	
+	
+
+

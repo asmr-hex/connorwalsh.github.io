@@ -1,0 +1,81 @@
+#Computer{
+	display: block;
+	position: relative;
+	left:50%;
+	top: 50px;
+	margin-left: -520px;
+	width: 1040px;
+	height:560px;
+	background-color: #889f94;
+}
+#Osc{
+	display: inline-block;
+	position:absolute;
+	left: 830px;
+	top: 285px;
+	z-index:2;
+}
+#Machine{
+	display: inline-block;
+	position:absolute;
+	width: 1040px;
+	height: 560px;
+	z-index:3;
+	pointer-events:none;        
+    background:url('../img/computer.png');
+	
+}
+
+#Terminal{
+	display:block;
+	position:relative;
+	left:48px;
+	top:46px;
+	width:728px;
+	height:380px;
+
+}
+
+#Demo{
+	display:inline-block;
+	top: 40px;
+	left: 40px;
+	position: absolute;
+	z-index: 2;
+}
+#paper{
+	display:none;
+	position: absolute;
+	width: 920px;
+	height: 800px;
+	left: 64px;
+	top: 527px;
+	background-image: url('../img/paper.png');
+	background-repeat: repeat-y;
+	z-index: 4;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	color: #52514F;
+}
+#article{
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	left: 60px;
+}
+#Headline{
+	text-align: center;
+	font-size: 200%;
+	color: #d48585;
+}
+#Description{
+	text-align: justify;
+	font-size:75%;
+	line-height: 110%;
+}
+#Footnotes{
+	position: relative;
+	top: 20px;
+	text-align: justify;
+	font-size:55%;
+	line-height: 110%;
+}

@@ -13,7 +13,7 @@ export default class Header extends Component {
 		    color={"#ec95bc"}
 		    font={"Arial, Helvetica, sans-serif"}
 		    size={"160%"}
-		    href={"http://connorwalsh.github.io/old"}
+		    href={"https://github.com/connorwalsh/connorwalsh.github.io/tree/master/old"}
 		    />
 	<HeaderText text={"{CODE}"}
 		    color={"#5cb2fb"}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+	<head>
+		<title> Science | Connor R. Walsh </title>
+		<!-- LOAD GLOBAL DOCS -->
+		<link rel="shortcut icon" href="../Global/img/mushroom.png">	
+		<link type="text/css" rel="stylesheet" href="../Global/stylesheets/stylesheet.css">		 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="../Global/javascript/jquery-ui-1.10.1.custom.min.js"></script>
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			messageStyle: "none",
+			TeX: { equationNumbers: { autoNumber: "AMS" } },
+			tex2jax: {
+	          inlineMath: [["$","$"],["\\(","\\)"]]
+	        }
+		  });
+		</script>
+		<script type="text/javascript"
+		  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full">
+		</script>
+		<script src="../Global/javascript/portfolio.js"></script>
+		<script type="text/javascript" src="../Global/javascript/swfobject.js"></script>
+		<script src="../Global/javascript/jsTerminal.js"></script>
+		<link type="text/css" rel="stylesheet" href="../Global/stylesheets/jsTerminal.css">
+		
+		<!-- LOAD LOCAL DOCS -->
+		<link type="text/css" rel="stylesheet" href="./stylesheets/science.css">
+		<script src="./javascript/science.js"></script>
+		<meta name="keywords" content="Connor Walsh, Connor R. Walsh, Portfolio, Music, Art">	
+		
+		<!-- Set Up swfObjects-->
+		<script>
+	    	swfobject.embedSWF("./experiments/oscilloscope.swf", "Osc", "190", "210", "9.0.0");
+	    </script>
+	    <!--[if IE]>
+	      <style type="text/css">
+
+	        #Machine {
+	          filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./img/computer.png', sizingMethod='scale');
+	          background:none !important;
+	        }
+
+	        </style>
+	    <![endif]-->
+	
+	</head>
+	<body onunload="">
+		<div class="loading">
+			<img src="../Global/img/loading.gif">
+		</div>
+		<div class="content">
+			<div id="header1"></div>
+			<div id="header2"></div>
+			<div id="Computer">
+				<div id= "Machine"></div>
+					<object id="Osc"></object>
+					<div id="Terminal"></div>
+					<div id= "paper"> 
+						<div id= "article">
+							<p id="Headline"></p>
+							<p id="Description"></p>
+							<p id="Footnotes"></p>
+						</div>
+					</div>
+			</div>
+			
+		</div>
+
+
+	</body>
+	
+</html>

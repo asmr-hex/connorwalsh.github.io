@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Demos>
+	<demo name="MonteCarlo">
+		<Headline> $\Large{\pi}$ BY CHANCE </Headline>
+		<Description><![CDATA[
+					Have you ever considered that there may be some organization to randomness? 
+					Or, that some inherent quality of randomness exists which is systematic and 
+					determinable? If not, the whole idea may sound a bit paradoxical and unintuitive, 
+					however it turns out that this approach to randomness can be useful in solving 
+					certain mathematical problems. The so called Monte Carlo method, invented by Polish 
+					mathematician Stanislaw Ulam in 1946, uses this idea as its driving principle. In 
+					the experiment above, we will be using a Monte Carlo method to estimate the digits 
+					of our favorite transcendental number: $\large{\pi}$!
+					<br>
+					<br>
+					<h4 style="display: inline;">Background</h4>
+					<br>
+					Before we begin, let's think hard about what it means for something to be a random 
+					event. First, by characterizing an event as random, we imply that something about 
+					that particular event-- its location, time, color, et cetera-- is unpredictable, 
+					meaning there is no coherent pattern in the event's random trait. A classic example 
+					of this is a coin toss$^{1}$.
+					<br>
+					 Now, we must ask: "what about the coin toss makes it random?" In this example, it 
+					is obvious that we mean that the randomly determined outcome is whether the coin is 
+					Heads or Tails. But, we could have instead tossed a standard six-sided die to yield 
+					six possible random outcomes. In this way, we have established that we may bound our 
+					random variable within a certain range, e.g. two sides of a coin, six sides of a die, 
+					within the first cartesian quadrant, within the Republic of Kiribati, et cetera.
+					<br>
+					Finally, we need to think about what will happen when a random event happens in a 
+					sequence. For example, say we toss a coin in succession and tally the number of 
+					heads and the total number of tosses.
+					<br>
+					<br>
+					<img src="./experiments/coins.png" width="476" height="84" style="	display: block; margin-left: auto;margin-right: auto;">
+					<br>
+					<br>
+					Here we've tossed the coin five times and can see that we've landed on heads 
+					twice. So 2 out of the 5 tosses we have landed on heads;  $\frac{2}{5}$ is $0.4$. But, if 
+					we are dealing with a fair coin we would expect that the probability of landing 
+					on heads to be $50\%$, or $0.5$, i.e. the coin lands on heads half of the time. Then 
+					why are we getting a value of $0.4$? Obviously, 5 is not even and the number of 
+					coin tosses cannot be fractional, so we cannot get $0.5$. However, say we decide 
+					to try our luck and give the coin one more toss. If it lands on heads that makes 
+					3 heads and 3 tails, so the universe makes sense and life is good because we have 
+					the exact outcome as our expected outcome according to probability. But say the 
+					coin lands on tails. Don't worry, the universe can still make sense, remember we 
+					are working with probability! Consider the circumstance in which you toss the coin 
+					a large number of times, say an infinite amount of times!   What would happen? Of 
+					course, this is impossible in reality, but theoretically as the number of tosses 
+					approaches infinity the number of heads divided by the total amount of tosses will 
+					equal exactly the expected value: $0.5$! This is explained by the so called Law of 
+					Large Numbers. So, the main point we must draw from this is that if we perform a 
+					large amount of random experiments in succession we are able to estimate expected 
+					probabilities.
+					<br>
+					<br>
+					<h4 style="display: inline;">How Does This Work?</h4>
+					<br>
+					So keeping in mind our discussion about randomness and probability, let's shift 
+					gears and talk about $\large{\pi}$. We know $\large{\pi}$ is the ratio of any circle's circumference to 
+					it's diameter and that it is irrational, i.e. it cannot be represented by a simple 
+					fraction and it has an infinite amount of digits to the right of the decimal point. 
+					So does anyone actually know the value of $\large{\pi}$? No, we only know around five trillion 
+					of it's digits and, since it goes on forever, we will never know its true value. But 
+					we can estimate its value which is what we're here to do.
+					<br>
+					<br>
+					Let's begin by introducing a circle with radius $r$ and a square with each side equal to $2r$.
+					<br>
+					<br>
+					<img src="./experiments/circle.png" width="200" height="200" style="display: inline-block; left: 130px; position: relative;">
+					<img src="./experiments/square.png" width="200" height="200" style="display: inline-block; left: 260px; position: relative;">
+					<br>
+					<br>
+					Now, let's write out the the equations determining their respective areas.
+					<br>
+					\begin{equation}
+						A_{\small{\bigcirc}} = \pi r^{2}
+					\end{equation}
+					\begin{equation}
+						A_{\Box} = (2r)^{2}
+					\end{equation}
+					Of course, we don't know the value of $\large{\pi}$, so is there any other way we can 
+					represent the area of the circle? Let's rearrange our shapes, so the circle 
+					is inscribed within our square.
+					<br>
+					<br>
+					<img src="./experiments/inscribed.png" width="200" height="200" style="	display: block; margin-left: auto;margin-right: auto;">
+					<br>
+					<br>
+					Maybe it will be easier to think of another way of representing the area of our 
+					circle now. Well, we can easily figure out the area of the square, so why don't 
+					we just multiply the area of the square by the percent of the square that the 
+					circle occupies? 
+					\begin{equation}
+						A_{\small{\bigcirc}} = A_{\Box}(P_{\bigcirc in \Box})
+					\end{equation}
+					where $P_{\bigcirc in \Box}$ is the percent of the square's area which the circle occupies.
+					Sounds reasonable, right? Well how will we figure out that percent? If you are thinking 
+					about probability then you are on the right track! Say we were to just randomly toss a 
+					pebble somewhere within the square. What would be the probability that it would land inside 
+					the inscribed circle? The answer is the percent of the square's area that the circle occupies! 
+					This is perfect! So we just need to throw an infinite amount of stones into the square to get 
+					the exact percent!
+					\begin{equation}
+						P_{\bigcirc in \Box} = \frac{\text{pebbles in circle}}{n} \text{ for } n\to \infty
+					\end{equation}
+					where $n$ is the total number of pebbles thrown.
+					<br>
+					Okay, now that we know how to solve for the percent of the square's area that the 
+					circle occupies, we can substitute equations 1), 2), and 4) into equation 3) and solve for $\large{\pi}$.
+					\begin{equation*}
+						\pi r^{2} =(4r^{2})(\frac{\text{pebbles in circle}}{n}) \text{ for } n\to \infty
+					\end{equation*}
+					\begin{equation*}
+						\pi = 4 (\frac{\text{pebbles in circle}}{n}) \text{ for } n\to \infty
+					\end{equation*}
+					So as the number of stones thrown gets bigger and bigger, we can expect our estimate of $\large{\pi}$, 
+					which we are calling $\phi$, to get better and better, although the rate of convergence relies 
+					on probability so the experiment will run differently each time.
+					<br>
+					<br>
+					If you haven't done so already, click the experiment screen above to begin. You will observe 
+					the circle inscribed within the square slowly fill up with randomly placed dots with the actual 
+					value of $\large{\pi}$ and the estimated value, $\phi$, below. To the right is a figure which shows the actual 
+					value of $\large{\pi}$ as a yellow line and the different estimations generates for each iteration being 
+					dynamically plotted. Typically the first two decimal digits take anywhere between 50,000 to 
+					200,000 iterations to converge, so it requires a little patience. 
+					]]>
+					
+		</Description> 
+		<Footnotes>
+			<![CDATA[
+			$^{1}$Now, you may be wondering why we don't just model the coin toss to make it 
+			predictable since the physics is all pretty well defined: the initial impulse 
+			force, the torque and angular momentum of the coin, the orientation of the 
+			surface on which it lands, et cetera. While this may be true, it would be an 
+			awful amount of work and may prove impractical. So, in a sense, a coin toss is not 
+			a true random event. Though by this logic there may be no true random events 
+			since it is conceivable-- assuming that we are all causal determinists here-- 
+			that every event can be determined by a theoretical set of causes. But we digress. 
+			And, for practicality we will view the coin toss as a random event. 
+			]]>
+		</Footnotes>
+	</demo>
+</Demos>

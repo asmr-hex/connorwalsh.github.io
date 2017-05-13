@@ -1,0 +1,232 @@
+
+/*PAGE SPECIFIC CSS: INDEX ----------------------------------------*/
+	@font-face{
+		font-family: "Pixelfont";
+		src: url(./Minecraftia.ttf);
+	}
+
+	#header{
+		position: relative;
+		left: 50%;
+		margin-left: -490px;
+		margin-top: 50px;
+		width: 315px;
+		height: 150px;
+		overflow: hidden;
+	}
+	#BioLink:link {
+		text-decoration:none;
+		font-size: 1.8em;
+		color: #d6d9e5;
+		
+	}
+	#BioLink:visited {
+		text-decoration:none;
+		color: #d6d9e5;
+		
+	}
+	#BioLink:hover {
+		text-decoration:none;
+		color: #ebeef6;
+		
+	}
+	#cv:link{
+		text-decoration:none;
+		color: #7D9FFF;
+	}
+	#cv:visited{
+		color: #7D9FFF;
+	}
+	#cv p{
+		text-align:center;
+	}
+	#email{
+		color: #7D9FFF;
+	}
+	#homeContainer{
+		position: relative;
+		display: inline-block;
+		top: 50px;
+		width: 80px;
+		height:80px;
+		left: -60px;
+		overflow:hidden;
+	}
+	#imgLogo{
+		position: relative;
+		width: 160px;
+		height: 80px;
+	}
+	#biography{
+		position: relative;
+		left: 50%;
+		width: 700px;
+		height: 300px;
+		margin-left: -350px;
+		border: 1px solid white;
+		color: #c6c9d7;
+		font-size: .5em;
+	}
+	#panel1{
+		position: absolute;
+		width: 700px;
+		height: 300px;
+		top: 0px;
+		overflow: hidden;
+	}
+	#panel2{
+		display: none;
+		position: absolute;
+		width: 700px;
+		height: 300px;
+		left: 10px;
+		top: 0px;
+		overflow: hidden;
+	}
+	#right{
+		float: right;
+	}
+	#left{
+		float: left;
+	}
+	#portrait{
+		float: right;		
+	}
+	#gitHubWrapper{
+		display:inline-block;
+		position: relative;
+		width: 50px;
+		height: 50px;
+		overflow: hidden;
+	}
+	#linkedinWrapper{
+		display:inline-block;
+		position: relative;
+		width: 50px;
+		height: 50px;
+		overflow: hidden;
+	}
+	#Sections{
+		position: relative;
+		left: 50%;
+		width: 1020px;
+		margin-left: -510px;
+	}
+	#NAME{
+		display: block;
+		position: relative;
+		width: 500px;
+		height: 150px;
+		background-image:url(../index_img/name.png);
+	}
+	
+	#NAME:hover {
+		display: block;
+		position: relative;
+		width: 500px;
+		height: 50px;
+		background-image:url(../index_img/name2.png);
+	} 
+	.SectionItem{
+		display: inline-block;
+		position: relative;
+		height: 180px;
+		margin-left: 20px;
+		margin-right: 20px;
+		padding: 0em;
+	}
+	.SectionItem p{
+		text-align:center;
+		position: relative;
+		bottom: 2px;
+		font-size: 14px;
+		color: #b9bccb;
+	}
+	#music_container{
+		display: inline-block;
+		width: 150px;
+		height: 100px;
+		overflow: hidden;
+	}
+	#Music {
+		display:inline-block;
+		position: relative;
+		left: 0px;
+		width: 300px;
+		height: 100px;
+		background-image:url(../index_img/tape.gif);
+	}
+	#Music:hover {
+		left:-150px;
+	}
+	#games_container{
+		display: inline-block;
+		width: 200px;
+		height: 100px;
+		overflow: hidden;
+	}
+	#Games {
+		display:inline-block;
+		position: relative;
+		left: 0px;
+		width: 400px;
+		height: 100px;
+		background-image:url(../index_img/games.gif);
+	}
+	#Games:hover{
+		left: -198px;
+	}
+	#travel_container{
+		display: inline-block;
+		position: relative;
+		top: 8px;
+		width: 121px;
+		height: 121px;
+		overflow: hidden;
+	}
+	#Travel {
+		display:inline-block;
+		position: relative;
+		left: -121px;
+		width: 242px;
+		height: 121px;
+		background-image:url(../index_img/compass.gif);
+	}
+	#Travel:hover{
+		left:0px;
+	}
+	#science_container{
+		display: inline-block;
+		width: 150px;
+		height: 100px;
+		overflow: hidden;
+	}
+	#Science {
+		display:inline-block;
+		position: relative;
+		left: -150px;
+		width: 300px;
+		height: 100px;
+		background-image:url(../index_img/wave.gif);
+	}
+	#Science:hover{
+		left: 0px;
+	}
+
+	#Drawing{
+	/*position: relative;*/
+		display:inline-block;
+		background: #CDCAD0;
+		z-index: -1;
+		/*border:1px solid #000000;*/
+	}
+	#etchAsketch{
+		position: absolute;
+		width: 125px;
+		height: 103px;
+	}
+	#Container{
+		position: relative;
+	} 
+	
+

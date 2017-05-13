@@ -1,0 +1,18 @@
+
+convert -dispose previous -delay 10 -size 288x100 \
+ -page +0+0 sine1.png \
+ -page +0+0 sine2.png \
+ -page +0+0 sine3.png \
+ -page +0+0 sine4.png \
+ -page +0+0 sine5.png \
+ -page +0+0 sine6.png \
+ -page +0+0 sine7.png \
+ -page +0+0 sine8.png \
+ -page +0+0 sine9.png \
+ -loop 0 wave.gif
+
+Patrol Cycle
+
+
+convert sine[1-9].png -duplicate 1,-2-1 \
+> -set delay 10 -set dispose previous -loop 0 wave.gif

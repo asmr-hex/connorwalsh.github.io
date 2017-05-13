@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+	<head>
+		<title> Home | Connor R. Walsh </title>
+		<!-- LOAD GLOBAL DOCS -->
+		<link rel="shortcut icon" href="../Global/img/mushroom.png">
+		<link type="text/css" rel="stylesheet" href="../Global/stylesheets/stylesheet.css"> 
+		<link type="text/css" rel="stylesheet" href="../Global/stylesheets/jquery.pageslide.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="../Global/javascript/portfolio.js"></script> 
+		<script type="text/javascript" src="../Global/javascript/jquery.wookmark.min.js"></script> 
+		
+		<!-- LOAD LOCAL DOCS -->
+		<link type="text/css" rel="stylesheet" href="./stylesheets/world.css"> 
+		<script type="text/javascript" src="./javascript/jquery.maphilight.js"></script>
+		<script type="text/javascript" src="./javascript/world.js"> </script> 
+		
+		<meta name="keywords" content="Connor Walsh, Connor R. Walsh, Portfolio, Music, Art">	
+		
+	</head>
+	<body class="fade" onunload="">
+		<div class="loading">
+			<img src="../Global/img/loading.gif">
+		</div>
+		<div class="content">
+			<div id="header1"></div>
+			<div id="header2"></div>
+			<div id="name_container"><p id= "country_name"></p></div>
+			<div class= "World_Map">
+				<img id = "zoom_map" src= " ">
+				<img id = "global_map" src = "./img/world_map.png" usemap="#Countries">  
+				<map name="Countries">
+					<area class= "areas" id = "US_area" shape = "poly">
+					<area class= "areas" id = "BC_area" shape = "poly">
+					<area class= "areas" id = "QB_area" shape = "poly">
+					<area class= "areas" id = "MX_area" shape = "poly">
+					<area class= "areas" id = "CR_area" shape = "poly">
+					<area class= "areas" id = "TZ_area" shape = "poly">
+					<area class= "areas" id = "IT_area" shape = "poly">
+					<area class= "areas" id = "FR_area" shape = "poly">
+					<area class= "areas" id = "UK_area" shape = "poly">
+					<area class= "areas" id = "IR_area" shape = "poly">
+					<area class= "areas" id = "IN_area" shape = "poly">
+					<area class= "areas" id = "CH_area" shape = "poly">
+					<area class= "areas" id = "SK_area" shape = "poly">
+					<area class= "areas" id = "AS_area" shape = "poly">
+				</map>		
+			</div>
+			<a href="#photos_menu" id= "photos_tab">
+			<div id= "photos_menu">
+				<p> YO Whats up</p>
+				<a href="javascript:$.pageslide.close()">Close</a>
+			</div>
+		
+			<div id= "photo_container">
+			
+			
+			</div>
+			<div class="navBar">
+				<div class="beginSet"></div>
+				<div class="soundContainer">
+					<a class="transition" id="soundIcon" href="../music"></a>
+				</div>
+				<div class="comma"></div>
+				<div class="gamesContainer">
+					<a class="transition" id="gamesIcon" href="../games"></a>
+				</div>
+				<div class="comma"></div>
+				<div class="worldContainer">
+					<a id="worldIcon" href="#"></a>
+				</div>
+				<div class="comma"></div>
+				<div class="scienceContainer">
+					<a class="transition" id="scienceIcon" href="../science"></a>
+				</div>
+				<div class="comma"></div>
+				<div class="scribbleContainer">
+					<a class="transition" id="scribbleIcon" href="../art"></a>
+				</div>
+				<div class="comma"></div>
+				<div class="homeContainer">
+					<a class="transition" id="homeIcon" href="../"></a>
+				</div>
+				<div class="endSet"></div>
+			</div>
+		</div>
+		
+		
+		
+		<script type="text/javascript" src="../Global/javascript/jquery.pageslide.min.js"></script>		
+		<script> $("#photos_tab").pageslide({"direction": "left", "speed": 900}); </script>
+	</body>
+	
+</html>

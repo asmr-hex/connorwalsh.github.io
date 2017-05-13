@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Music | Connor Walsh </title>
+		<!-- LOAD GLOBAL DOCS -->
+		<link rel="shortcut icon" href="../Global/img/mushroom.png">
+		<link type="text/css" rel="stylesheet" href="../Global/stylesheets/stylesheet.css">	
+		<link type="text/css" rel="stylesheet" href="../Global/stylesheets/lightbox.css">	
+		<link type="text/css" rel="stylesheet" href="../Global/stylesheets/jquery-ui-1.10.1.custom.min.css">	 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="../Global/javascript/jquery-ui-1.10.1.custom.min.js"></script>
+		<script src="../Global/javascript/jquery.marquee.js"></script>
+		<script src="../Global/javascript/jquery.wookmark.min.js"></script>
+		<script src="../Global/javascript/jquery.imagesLoaded.js"></script>
+		<script src="../Global/javascript/lightbox.js"></script>
+		<script src="../Global/javascript/portfolio.js"></script>		
+		<!-- LOAD LOCAL DOCS -->
+		<link type="text/css" rel="stylesheet" href="./stylesheets/music.css">
+		<script src="./javascript/data.js"></script>
+		<script src="./javascript/music.js"></script>
+		
+	</head>
+	<body onunload= "">
+		<div class="loading">
+			<img src="../Global/img/loading.gif">
+		</div>
+		<div class="content">
+			<div id="header1"></div>
+			<div id="header2"></div>
+
+			<div id="contentContainer">
+				<div id="cassette_area">
+					<div class= "cassette_container">
+						<div class= "cassette">
+							<img class= "cassette_img" id="geography_club" src="./img/tape_geography_club.gif">
+						</div>
+					</div>
+					<div class= "cassette_container">
+						<div class= "cassette">
+							<img class= "cassette_img" id="mattress" src="./img/tape_mattress.gif">
+						</div>
+					</div>
+					<div class= "cassette_container">
+						<div class= "cassette">
+							<img class= "cassette_img" id="snowbaby" src="./img/tape_snowbaby.gif">
+						</div>
+					</div>
+					<div class= "cassette_container">
+						<div class= "cassette">
+							<img class= "cassette_img" id="ira_and_friends" src="./img/tape_ira_and_friends.gif">
+						</div>
+					</div>
+				</div>
+	
+				<div id="player">
+					<div id="tape_deck"></div>
+					<div id="tapeloading">
+						<img src="../Global/img/cubeload.gif">
+					</div>
+					<img id="tape_player" src= "./img/tape_player.png">
+					<span id="play_button"></span>
+					<span id="pause_button"></span>
+					<span id="backward_button"></span>
+					<span id="forward_button"></span>
+					<span id="eject_button"></span>
+					<div id= "audio_container">
+				<!--		<audio id="sounds">
+							<source id= "wave_file" src= "./audio/geography_club/shearing.wav" type= "audio/x-wav"></source>
+						</audio> -->
+					</div>
+					<span id= "volume_bar_panel">
+						<span id= "volume_bar_container"></span>
+							<span id= "volume_bar"></span>
+				
+					</span>
+					<span id= "volume_icon_container"><img id= "volume_icon" src= "./img/volume.png"></span>
+					<span id= "time_remaining"><p id= "time_left"></p></span>
+					<span id= "time_bar"> </span> 
+					<span id= "time_line"></span>
+				</div>
+	
+				<div id= "info_bubble">
+					<div id= "info_container">
+						<span id= "project_name"></span>
+						<img id="project_img">
+						<div id="download"></div>
+						<table id= "track_list">
+						</table>
+						<div id="photo_container">
+						</div>
+						<div id = "about"> About </div>
+						<p id= "descriptions">
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="navBar">
+				<div class="beginSet"></div>
+				<div class="soundContainer">
+					<a id="soundIcon" href="#"></a>
+				</div>
+				<div class="comma"></div>
+				<div class="gamesContainer">
+					<a class="transition" id="gamesIcon" href="../games"></a>
+				</div>
+				<div class="comma"></div>
+				<div class="worldContainer">
+					<a class="transition" id="worldIcon" href="../world"></a>
+				</div>
+				<div class="comma"></div>
+				<div class="scienceContainer">
+					<a class="transition" id="scienceIcon" href="../science"></a>
+				</div>
+				<div class="comma"></div>
+				<div class="scribbleContainer">
+					<a class="transition" id="scribbleIcon" href="../art"></a>
+				</div>
+				<div class="comma"></div>
+				<div class="homeContainer">
+					<a class="transition" id="homeIcon" href="../"></a>
+				</div>
+				<div class="endSet"></div>
+			</div>
+
+		</div>
+		
+	</body>
+</html>

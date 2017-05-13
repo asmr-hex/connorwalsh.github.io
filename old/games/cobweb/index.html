@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+	<head>
+		<title> Games | Connor R. Walsh </title>
+		<!-- LOAD GLOBAL DOCS -->
+		<link rel="shortcut icon" href="../../Global/img/mushroom.png">
+		<link type="text/css" rel="stylesheet" href="../../Global/stylesheets/stylesheet.css">	
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="../../Global/javascript/portfolio.js"></script>
+		<script type="text/javascript" src="../../Global/javascript/swfobject.js"></script>
+		<!-- LOAD LOCAL DOCS -->
+		<link type="text/css" rel="stylesheet" href="./stylesheets/cobweb.css">
+		<script type="text/javascript" src="./javascript/cobweb.js"></script>
+		
+		<script>
+	    	swfobject.embedSWF("./swfs/cobwebInit.swf", "myContent", "700", "630", "9.0.0");
+	    </script>
+	</head>
+	<body onunload= "">
+		<div class="loading">
+			<img src="../../Global/img/loading.gif">
+		</div>
+		<div class="content">
+			<div id="header1"></div>
+			<div id="header2"></div>
+			<div id="header3"></div>
+			
+			<div id ="gameFrame">
+				<div id="gameBox">
+				<object id="myContent"></object>
+				</div>
+			</div>
+			
+			<div class="navBar">
+				<div class="beginSet"></div>
+				<div class="soundContainer">
+					<a class="transition" id="soundIcon" href="../../music"></a>
+				</div>
+				<div class="comma"></div>
+				<div class="gamesContainer">
+					<a class="transition" id="gamesIcon" href="../"></a>
+				</div>
+				<div class="comma"></div>
+				<div class="worldContainer">
+					<a class="transition" id="worldIcon" href="../../world"></a>
+				</div>
+				<div class="comma"></div>
+				<div class="scienceContainer">
+					<a class="transition" id="scienceIcon" href="../../science"></a>
+				</div>
+				<div class="comma"></div>
+				<div class="scribbleContainer">
+					<a class="transition" id="scribbleIcon" href="../../art"></a>
+				</div>
+				<div class="comma"></div>
+				<div class="homeContainer">
+					<a class="transition" id="homeIcon" href="../../"></a>
+				</div>
+				<div class="endSet"></div>
+			</div>	
+			</div>
+
+		</div>
+	</body>
+</html>

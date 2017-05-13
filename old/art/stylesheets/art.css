@@ -1,0 +1,64 @@
+
+/*PAGE SPECIFIC CSS: INDEX ----------------------------------------*/
+	@font-face{
+		font-family: "Pixelfont";
+		src: url(./Minecraftia.ttf);
+	}
+#body_sidescroll{
+	overflow: scroll-Y;
+}
+#art_container{
+	display:block;
+	position: absolute;
+	height: 550px;
+	width: 6200px;
+	top: 50%;
+	margin-top: -230px;
+}
+.piece{
+	display: inline-block;
+	position: relative;
+	height: 550px;
+	margin-left: 75px;
+	margin-right:75px;
+	
+}
+.img_wrap{
+	float: left;
+	position: relative;
+	height: 500px;
+	left: 50%;
+	margin-bottom: 1px;
+}
+.piece_img{
+	display:block;
+	position:relative;
+	height: 500px;
+	left: -50%;
+}
+.piece_name{
+	display: block;
+	position:relative;
+	top: 10px;
+	left: 20px;
+	font-size: 14px;
+	font-family: Georgia, Serif;
+	line-height: 14px;
+	
+}
+.piece_info{
+	display: block;
+	position:relative;
+	top: -5px;
+	left: 20px;
+	font-size: 12px;
+	font-family: Georgia, Serif;
+	line-height: 12px;
+}
+#artnavBar{
+	position:fixed;
+	top : 10px;
+}
+
+	
+
